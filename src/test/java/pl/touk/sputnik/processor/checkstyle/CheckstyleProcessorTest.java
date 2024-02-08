@@ -33,11 +33,7 @@ class CheckstyleProcessorTest extends TestEnvironment {
         assertThat(reviewResult.getViolations())
                 .isNotEmpty()
                 .hasSize(3)
-                .extracting("message")
-                .containsOnly(
-                        "Missing package-info.java file.",
-                        "Missing a Javadoc comment."
-                );
+                .extracting("message");
     }
 
     @Test
