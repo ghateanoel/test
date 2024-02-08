@@ -48,4 +48,7 @@ public class TSLintProcessor extends ProcessorRunningExternalProcess {
     public String processFileAndDumpOutput(File fileToReview) {
         return tsLintScript.reviewFile(fileToReview.getAbsolutePath());
     }
+    public int sum(int a, int b ) {
+        return a + b;
+    }
 }
