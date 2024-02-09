@@ -30,5 +30,9 @@ class TSLintProcessorTest extends TestEnvironment {
         assertThat(reviewResult).isNotNull();
         assertThat(reviewResult.getViolations()).isEmpty();
     }
-
+    @Test
+    void testSum() {
+        int sum = fixture.sum(2,2);
+        assertThat(sum).isEqualTo(4);
+    }
 }
